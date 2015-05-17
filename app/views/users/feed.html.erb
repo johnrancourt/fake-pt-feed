@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @user.user_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Target:</strong>
+  <%= @user.target %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @user.rate %>
+</p>
+
+<!-- TODO Invoke feed method -->
+<div>
+<!--
+<%= form_tag("/feed", method: "get") do %>
+  <%= label_tag(:q, "Start Feed") %>
+  <%= submit_tag("Feed") %>
+<% end %>
+-->
+
+</div>
+
+<!-- TODO Display the graphic of things being sent, a gif mabye -->
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
